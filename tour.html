@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+<head>
+<title>Beyond Veils | Tour Dates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .chevron {
+    transition: transform 0.2s;
+  }
+  .chevron.down {
+    transform: rotate(90deg);
+  }
+  /* Remove grey hover effect from arrow button and month header */
+  .month-header.w3-button,
+  .month-header.w3-button:hover,
+  .month-header.w3-button:active,
+  .month-header.w3-button:focus {
+    background-color: #fff !important;
+    color: #222 !important;
+    box-shadow: none !important;
+    font-weight: bold;
+  }
+</style>
+
+</head>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">BEYOND VEILS</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+        <a href="tour.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" id="tour">TOUR DATES</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+        <a href="merch.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MERCH</a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navbar" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+  <a href="tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR DATES</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
+  <a href="merch.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+    
+    <div class="w3-black" >
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+
+      <div id="tourMonths">
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-jan')" id="chevron-month-jan">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-jan"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-jan')">January</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-jan">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-feb')" id="chevron-month-feb">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-feb"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-feb')">February</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-feb">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-mar')" id="chevron-month-mar">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-mar"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-mar')">March</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-mar">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-apr')" id="chevron-month-apr">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-apr"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-apr')">April</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-apr">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-may')" id="chevron-month-may">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-may"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-may')">May</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-may">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-jun')" id="chevron-month-jun">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-jun"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-jun')">June</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-jun">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-jul')" id="chevron-month-jul">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-jul"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-jul')">July</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-jul">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-aug')" id="chevron-month-aug">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-aug"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-aug')">August</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-aug">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-sep')" id="chevron-month-sep">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-sep"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-sep')">September</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-sep">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-oct')" id="chevron-month-oct">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-oct"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-oct')">October</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-oct">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-nov')" id="chevron-month-nov">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-nov"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-nov')">November</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-nov">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+        <div class="month-header-container" style="display:flex;align-items:center;">
+          <button class="w3-button" style="background:transparent;border:none;padding:0 8px 0 0;" onclick="toggleMonth('month-dec')" id="chevron-month-dec">
+            <i class="fa fa-chevron-right chevron" id="chevron-icon-month-dec"></i>
+          </button>
+          <div class="month-header w3-button w3-block w3-left-align w3-light-grey" style="flex:1;text-align:left;" onclick="toggleMonth('month-dec')">December</div>
+        </div>
+        <ul class="w3-ul w3-padding w3-hide" id="month-dec">
+          <li class="w3-padding">No upcoming events</li>
+        </ul>
+      </div>
+
+      
+    </div>
+  </div>
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  
+  <a href="https://www.instagram.com/beyondveilsofficial/" target="_blank" id="footerLink"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://open.spotify.com/artist/41TheRVbDo3k82QzIvqYPV" target="_blank" id="footerLink"><i class="fa fa-spotify w3-hover-opacity"></i></a>
+  <a href="https://www.facebook.com/beyondveilsofficial" target="_blank" id="footerLink"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.youtube.com/channel/UCmlFVy5Q8S7Lk3GTmzRjxbQ" target="_blank" id="footerLink"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  
+  <p class="w3-medium">Powered by Beyond Veils</p>
+  
+</footer>
+
+
+  
+  <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Dropdown for tour months
+    function toggleMonth(id) {
+      var x = document.getElementById(id);
+      var chevron = document.getElementById('chevron-icon-' + id.replace('month-', 'month-'));
+      if (x.classList.contains('w3-hide')) {
+        x.classList.remove('w3-hide');
+        if (chevron) chevron.classList.add('down');
+      } else {
+        x.classList.add('w3-hide');
+        if (chevron) chevron.classList.remove('down');
+      }
+    }
+  </script>
+</body>
+</html>

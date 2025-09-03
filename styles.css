@@ -1,0 +1,21 @@
+#tour {
+  background-color: #780818;;
+}
+#merch {
+  background-color: #780818;
+}
+#about {
+  background-color: #780818;;
+}
+#contact {
+  background-color: #780818;;
+}
+#email{
+  text-decoration: none; 
+}
+#email:hover {
+  text-decoration: underline;
+}
+#footerLink{
+  text-decoration: none;
+}
